@@ -9,30 +9,37 @@
 <form method="post" action="/"> {% csrf_token %}
   <div class="form-group">
     <label>num</label>
-    <input type="number" class="form-control" placeholder="name@example.com">
+    <input type="number" class="form-control" name="num" placeholder="name@example.com">
 
 
   <div class="form-group">
     <label>name</label>
-    <input type="text" class="form-control" placeholder="name@example.com">
+    <input type="text" class="form-control" name="name" placeholder="name@example.com">
 
 
-      <div class="form-group">
+  <div class="form-group">
     <label>surname</label>
-    <input type="surname" class="form-control"  placeholder="name@example.com">
+    <input type="surname" class="form-control" name="surname" placeholder="name@example.com">
 
 
   <div class="form-group">
     <label>Age</label>
-    <input type="number" class="form-control"  placeholder="name@example.com">
+    <input type="number" class="form-control" name="Age" placeholder="name@example.com">
 
 
   <div class="form-group">
     <label>Address</label>
-    <input type="text" class="form-control" placeholder="name@example.com">
+    <input type="text" class="form-control" name="Address" placeholder="name@example.com">
+
+
+
+  <div class="form-group">
+   <label>note</label>
+   <input type="text"  name="note">
 
 
 <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
     </div>
     </div>
     </div>
