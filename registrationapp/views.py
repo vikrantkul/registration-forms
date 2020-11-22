@@ -16,9 +16,11 @@ def index(request):
         Age=request.POST.get('Age','')
         Address=request.POST.get('Address','')
         note=request.POST.get('note','')
+        birthdate=request.POST.get('birthdate','')
 
-        if num and name and surname and Age and Address and note:
-            student=Student(num=num,name=name,surname=surname,Age=Age,Address=Address,note=note)
+
+        if num and name and surname and Age and Address and note and birthdate:
+            student=Student(num=num,name=name,surname=surname,Age=Age,Address=Address,note=note,birthdate=birthdate)
             student.save()
         else:
              return HttpResponse("sorry bhava")
